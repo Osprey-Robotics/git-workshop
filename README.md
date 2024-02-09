@@ -6,7 +6,7 @@ commands and some best practices. The contents are not important.
 Below is the list of commands run, give or take
 
 ## init repo
-
+```bash
 mkdir git-workshop
 cd git-workshop/
 git init .
@@ -23,9 +23,10 @@ git tag init-repo
 git remote add origin git@github.com:Osprey-Robotics/git-workshop.git
 git push --set-upstream origin master
 git push --tags
+```
 
 ## working with files
-
+```bash
 cp ../git-workshop-prep/ozzie.cpp ./
 g++ ozzie.cpp
 ls -l
@@ -55,9 +56,10 @@ git mv ozzie.py src/
 git status
 git commit
 git tag working-with-files
+```
 
 ## modify, readd, amend
-
+```bash
 nano ozzie.py
 git diff
 git add ozzie.py
@@ -74,9 +76,10 @@ nano ozzie.py
 git commit --amend --no-edit
 git tag modify-readd-amend
 git push --tags
+```
 
 ## reset soft/hard, rebase/
-
+```bash
 cp ../git-workshop-prep/*png ./
 tyls im-a-binary-dont-commit-me.png
 git status
@@ -90,9 +93,10 @@ git status
 git rebase -i --committer-date-is-author-date HEAD~5
 ls -l
 git tag reset-soft-hard-rebase
+```
 
 ## branch/pr/pull
-
+```bash
 git branch new-feature
 git checkout new-feature
 nano src/ozzie.py
@@ -108,9 +112,10 @@ git commit ozzie.py
 git checkout master
 git push -u origin hacker-back-door
 git pull
+```
 
 ## github actions
-
+```bash
 cp -r ../git-workshop-prep/.github/ ./
 ls -la
 nano .github/workflows/main.yml
@@ -120,4 +125,4 @@ nano ozzie.py
 git add ozzie.py
 git commit ozzie.py
 git push
-
+```
