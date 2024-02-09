@@ -12,5 +12,4 @@ jobs:
     steps:
       - name: Run program
         run: |
-           ls -l
-           python src/ozzie.py
+           python --version
