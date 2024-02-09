@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Run program
         run: |
-           python ozzie.py
+           python src/ozzie.py
